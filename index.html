@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia de Estudos para Iniciantes em Tecnologia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f8fafc;
+        scroll-behavior: smooth;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+      }
+
+      .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+      }
+
+      .course-icon {
+        transition: all 0.3s ease;
+      }
+
+      .course-card:hover .course-icon {
+        transform: scale(1.1);
+      }
+
+      .tag {
+        display: inline-block;
+        background-color: #e0e7ff;
+        color: #4f46e5;
+        border-radius: 9999px;
+        padding: 0.25rem 0.75rem;
+        font-size: 0.75rem;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16 md:py-24">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+            Guia de Estudos para Iniciantes em Tecnologia
+          </h1>
+          <p class="text-xl md:text-2xl opacity-90 mb-8">
+            O que estudar nas férias para se tornar um dev front-end?
+          </p>
+          <div class="flex justify-center space-x-4">
+            <a
+              href="#courses"
+              class="bg-white text-indigo-600 font-semibold px-6 py-3 rounded-lg hover:bg-indigo-50 transition-all"
+            >
+              Ver Cursos
+            </a>
+            <a
+              href="#tips"
+              class="border-2 border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-indigo-600 transition-all"
+            >
+              Dicas
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Introduction -->
+    <section class="py-12 bg-white">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="flex flex-col md:flex-row gap-8 items-center">
+          <div class="md:w-1/2">
+            <img
+              src="https://images.unsplash.com/photo-1555431189-0fabf2667795?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+              alt="Programação"
+              class="rounded-xl shadow-lg w-full h-auto"
+            />
+          </div>
+          <div class="md:w-1/2">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4">
+              E aí, futuro dev!
+            </h2>
+            <p class="text-gray-600 mb-4">
+              Já sabe o que vai fazer nas férias? Ok, a gente sabe que férias
+              foram feitas pra descansar... mas que tal aproveitar aquele
+              tempinho livre entre uma soneca e outra pra dar um gás nos seus
+              conhecimentos de tecnologia? 👨‍💻👩‍💻
+            </p>
+            <p class="text-gray-600 mb-6">
+              Este guia foi pensado especialmente para vocês, alunos do técnico
+              em informática, com o objetivo de dar aquele empurrãozinho na hora
+              de planejar o seu <strong>futuro profissional</strong>. E já fica
+              o spoiler: estudar um pouco por fora vai te deixar na frente de
+              muita gente!
+            </p>
+            <div class="flex items-center space-x-2">
+              <div class="bg-indigo-100 text-indigo-700 rounded-full px-4 py-3">
+                <i class="fas fa-rocket"></i>
+              </div>
+              <p class="text-sm text-gray-600">
+                Aprenda no seu ritmo com videoaulas gratuitas
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Where to Start -->
+    <section class="py-12 bg-gray-50" id="start">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-12">
+          <span class="tag mb-3 text-indigo-600 bg-indigo-100">
+            Por onde começar?
+          </span>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            🚀 Seu caminho na programação
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Se você é iniciante e quer entender como tudo funciona na web, o
+            melhor ponto de partida é o <strong>HTML e CSS</strong>. Esses são
+            os "tijolinhos" que constroem os sites que você acessa todo dia.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="py-16 bg-white" id="courses">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">
+          🧠 Cursos Recomendados
+        </h2>
+
+        <!-- HTML/CSS -->
+        <div class="mb-16">
+          <h3
+            class="text-2xl font-semibold text-gray-800 mb-8 flex items-center"
+          >
+            <span
+              class="flex items-center bg-blue-100 text-blue-600 px-3 py-4 rounded-full mr-4"
+            >
+              <i class="fas fa-code"></i>
+            </span>
+            <span>1. HTML e CSS - Front-end para iniciantes</span>
+          </h3>
+          <p class="text-gray-600 mb-6 max-w-3xl">
+            A jornada começa com os fundamentos da web. O curso é dividido em
+            módulos, então dá pra ir no seu ritmo.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center course-icon bg-blue-100 text-blue-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                  >
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <h4 class="font-bold text-lg text-gray-800">Módulo 1</h4>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Introdução, estrutura de sites, primeiras tags, formatação.
+                </p>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n"
+                  target="_blank"
+                  class="text-blue-600 font-medium hover:underline inline-flex items-center"
+                >
+                  Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center course-icon bg-blue-100 text-blue-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                  >
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <h4 class="font-bold text-lg text-gray-800">Módulo 2</h4>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Listas, tabelas, iframes e formulários.
+                </p>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s"
+                  target="_blank"
+                  class="text-blue-600 font-medium hover:underline inline-flex items-center"
+                >
+                  Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center course-icon bg-blue-100 text-blue-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                  >
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <h4 class="font-bold text-lg text-gray-800">Módulo 3</h4>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Deixando seu site bonito! Estilos, cores, fontes, alinhamento.
+                </p>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLHz_AreHm4dmcAviDwiGgHbeEJToxbOpZ"
+                  target="_blank"
+                  class="text-blue-600 font-medium hover:underline inline-flex items-center"
+                >
+                  Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center course-icon bg-blue-100 text-blue-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                  >
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <h4 class="font-bold text-lg text-gray-800">Módulo 4</h4>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Display, position, flexbox… ou seja, o design ficando
+                  profissa.
+                </p>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkcVCk2Bn_fdVQ81Fkrh6WT"
+                  target="_blank"
+                  class="text-blue-600 font-medium hover:underline inline-flex items-center"
+                >
+                  Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center course-icon bg-blue-100 text-blue-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                  >
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <h4 class="font-bold text-lg text-gray-800">Módulo 5</h4>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Responsividade, animações e projetos completos!
+                </p>
+                <a
+                  href="http://youtube.com/playlist?list=PLHz_AreHm4dn1bAtIJWFrugl5z2Ej_52d"
+                  target="_blank"
+                  class="text-blue-600 font-medium hover:underline inline-flex items-center"
+                >
+                  Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="mb-16">
+          <h3
+            class="text-2xl font-semibold text-gray-800 mb-8 flex items-center"
+          >
+            <span
+              class="flex items-center bg-yellow-100 text-yellow-600 p-3 rounded-full mr-4"
+            >
+              <i class="fab fa-js"></i>
+            </span>
+            <span>JavaScript – O cérebro da página</span>
+          </h3>
+          <p class="text-gray-600 mb-6 max-w-3xl">
+            Aprendeu HTML/CSS? Agora chegou a hora de colocar
+            <strong>inteligência e interatividade</strong> nas suas páginas. É
+            aqui que a mágica acontece!
+          </p>
+
+          <div
+            class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg max-w-2xl"
+          >
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div
+                  class="flex items-center course-icon bg-yellow-100 text-yellow-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                >
+                  <i class="fas fa-play"></i>
+                </div>
+                <h4 class="font-bold text-lg text-gray-800">
+                  Curso de JavaScript e ECMAScript
+                </h4>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Aprenda variáveis, funções, eventos e até criar jogos simples
+                com JS. Super divertido!
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1"
+                target="_blank"
+                class="text-yellow-600 font-medium hover:underline inline-flex items-center"
+              >
+                Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHP -->
+        <div class="mb-16">
+          <h3
+            class="text-2xl font-semibold text-gray-800 mb-8 flex items-center"
+          >
+            <span
+              class="flex items-center bg-purple-100 text-purple-600 px-3 py-4 rounded-full mr-4"
+            >
+              <i class="fab fa-php"></i>
+            </span>
+            <span>PHP Moderno – Programação no lado do servidor</span>
+          </h3>
+          <p class="text-gray-600 mb-6 max-w-3xl">
+            Pra quem quer começar a entender o que acontece por trás dos sites
+            (backend), o PHP ainda é uma ótima escolha, principalmente pra
+            projetos pequenos e médios.
+          </p>
+
+          <div
+            class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg max-w-2xl"
+          >
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div
+                  class="flex items-center course-icon bg-purple-100 text-purple-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                >
+                  <i class="fas fa-play"></i>
+                </div>
+                <h4 class="font-bold text-lg text-gray-800">
+                  Curso de PHP Moderno
+                </h4>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Aprenda a desenvolver aplicações web completas com PHP.
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_"
+                target="_blank"
+                class="text-purple-600 font-medium hover:underline inline-flex items-center"
+              >
+                Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Java -->
+        <div class="mb-16">
+          <h3
+            class="text-2xl font-semibold text-gray-800 mb-8 flex items-center"
+          >
+            <span
+              class="flex items-center bg-red-100 text-red-600 px-4 py-3 rounded-full mr-4"
+            >
+              <i class="fab fa-java"></i>
+            </span>
+            <span>Java e Programação Orientada a Objetos (POO)</span>
+          </h3>
+          <p class="text-gray-600 mb-6 max-w-3xl">
+            Se o seu foco é se aprofundar em
+            <strong>lógica de programação</strong>, entender como softwares
+            maiores são estruturados e até dar os primeiros passos rumo à
+            engenharia de software, Java é uma escolha certeira.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div
+              class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center course-icon bg-red-100 text-red-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                  >
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <h4 class="font-bold text-lg text-gray-800">Curso de Java</h4>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Aprenda a programar com uma das linguagens mais usadas no
+                  mundo.
+                </p>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR"
+                  target="_blank"
+                  class="text-red-600 font-medium hover:underline inline-flex items-center"
+                >
+                  Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+
+            <div
+              class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg"
+            >
+              <div class="p-6">
+                <div class="flex items-center mb-4">
+                  <div
+                    class="flex items-center course-icon bg-red-100 text-red-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                  >
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <h4 class="font-bold text-lg text-gray-800">
+                    Curso de POO com Java
+                  </h4>
+                </div>
+                <p class="text-gray-600 mb-4">
+                  Entenda os conceitos de Programação Orientada a Objetos.
+                </p>
+                <a
+                  href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkqe2aR0tQK74m8SFe-aGsY"
+                  target="_blank"
+                  class="text-red-600 font-medium hover:underline inline-flex items-center"
+                >
+                  Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div>
+          <h3
+            class="text-2xl font-semibold text-gray-800 mb-8 flex items-center"
+          >
+            <span
+              class="flex items-center bg-green-100 text-green-600 p-4 rounded-full mr-4"
+            >
+              <i class="fas fa-database"></i>
+            </span>
+            <span>Banco de Dados – Guardando informações com eficiência</span>
+          </h3>
+          <p class="text-gray-600 mb-6 max-w-3xl">
+            Por fim, um bom desenvolvedor precisa saber trabalhar com dados.
+            Aprender sobre <strong>banco de dados</strong> vai te ajudar a
+            guardar, organizar e buscar informações de forma inteligente.
+          </p>
+
+          <div
+            class="course-card bg-white rounded-xl shadow-md overflow-hidden border border-gray-100 transition-all duration-300 hover:shadow-lg max-w-2xl"
+          >
+            <div class="p-6">
+              <div class="flex items-center mb-4">
+                <div
+                  class="flex items-center course-icon bg-green-100 text-green-600 pr-3 pl-4 py-3 rounded-full mr-4"
+                >
+                  <i class="fas fa-play"></i>
+                </div>
+                <h4 class="font-bold text-lg text-gray-800">
+                  Curso de Banco de Dados
+                </h4>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Aprenda sobre modelagem de dados, SQL e muito mais.
+              </p>
+              <a
+                href="https://www.youtube.com/playlist?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r"
+                target="_blank"
+                class="text-green-600 font-medium hover:underline inline-flex items-center"
+              >
+                Assistir agora <i class="fas fa-arrow-right ml-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-16 bg-indigo-50" id="tips">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-12">
+          <span class="tag mb-3 text-indigo-600 bg-indigo-100">
+            Dicas finais
+          </span>
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">
+            📌 Como aproveitar ao máximo
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-start mb-4">
+              <div
+                class="flex items-center bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4"
+              >
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-2">
+                  Monte um cronograma leve
+                </h4>
+                <p class="text-gray-600">
+                  Uma aula por dia já faz diferença. Não precisa virar noites
+                  estudando, vá no seu ritmo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-start mb-4">
+              <div
+                class="flex items-center bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4"
+              >
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-2">Pratique sempre</h4>
+                <p class="text-gray-600">
+                  Abrir o VSCode e digitar código é essencial. Não só assista,
+                  mas coloque a mão na massa!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-start mb-4">
+              <div
+                class="flex items-center bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4"
+              >
+                <i class="fas fa-question-circle"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-2">Anote dúvidas</h4>
+                <p class="text-gray-600">
+                  Pesquise no Google, Stack Overflow, ou pergunte para
+                  professores e colegas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100">
+            <div class="flex items-start mb-4">
+              <div
+                class="flex items-center bg-indigo-100 text-indigo-600 p-3 rounded-full mr-4"
+              >
+                <i class="fas fa-rocket"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-gray-800 mb-2">
+                  Crie projetos próprios
+                </h4>
+                <p class="text-gray-600">
+                  Vale site pessoal, portfólio ou até blog. O importante é
+                  aplicar o que aprendeu.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bonus Section -->
+    <section
+      class="py-16 bg-gradient-to-r from-indigo-500 to-purple-600 text-white"
+    >
+      <div class="container mx-auto px-4 max-w-4xl text-center">
+        <div
+          class="inline-block bg-white bg-opacity-20 backdrop-blur-sm rounded-full px-6 py-2 mb-6"
+        >
+          <span class="font-semibold">✨ Bônus</span>
+        </div>
+        <h2 class="text-3xl font-bold mb-6">Por que estudar nas férias?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto">
+          Estudar por fora nas férias mostra iniciativa, organização e
+          interesse. Isso chama a atenção de professores, recrutadores e, claro,
+          <strong>te ajuda a aprender de verdade</strong>.
+        </p>
+        <p class="text-2xl font-bold mb-8">
+          Então bora fazer esse tempo livre render?
+        </p>
+        <a
+          href="#courses"
+          class="bg-white text-indigo-600 font-semibold px-8 py-3 rounded-lg hover:bg-indigo-50 transition-all inline-block"
+        >
+          Voltar aos cursos
+        </a>
+      </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button
+      id="backToTop"
+      class="flex items-center justify-center fixed bottom-6 right-6 bg-indigo-600 text-white p-4 rounded-full shadow-lg opacity-0 invisible transition-all"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+      // Back to Top Button
+      const backToTopButton = document.getElementById("backToTop");
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.remove("opacity-0", "invisible");
+          backToTopButton.classList.add("opacity-100", "visible");
+        } else {
+          backToTopButton.classList.remove("opacity-100", "visible");
+          backToTopButton.classList.add("opacity-0", "invisible");
+        }
+      });
+
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          if (targetId === "#") return;
+
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
